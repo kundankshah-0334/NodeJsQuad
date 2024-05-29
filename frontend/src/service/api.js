@@ -10,4 +10,3 @@ export const getUser = async () => {
       console.log(e);
     }
 }
- 

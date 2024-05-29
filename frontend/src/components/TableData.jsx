@@ -14,7 +14,7 @@ const TableData = () => {
     // Fetch data every minute
     const intervalId = setInterval(() => {
       getAllUsers();
-    }, 10000); // 60000 milliseconds = 1 minute
+    }, 60000); // 60000 milliseconds = 1 minute
 
     // Clean up function to clear interval when component unmounts
     return () => clearInterval(intervalId);
@@ -25,7 +25,6 @@ const TableData = () => {
 
     let response = await getUser();
     setuser(response.data);
-    // console.log(response)
   }
 
 
